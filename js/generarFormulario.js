@@ -369,7 +369,7 @@ function genera_tabla_json() {
     document.getElementById("mostrarForm").style.visibility = "visible";
 
     // HACEMOS UN innerHTML CON LA ETIQUETA DE video HTML PARA GENERAR EL VIDEO Y PODER REPRODUCIRLO
-    document.getElementById("ocultar_video").innerHTML = "<video id='video' width='700' height='350'><source src = '/video/cagaste.mp4'></video>";
+    document.getElementById("ocultar_video").innerHTML = "<video id='video' width='700' height='350'><source src = 'video/cagaste.mp4'></video>";
     // MOSTRAMOS EL FORMULARIO
     document.getElementById("mostrarForm").addEventListener("click", mostrarForm);
     // OCULTAMOS EL VIDEO CON EL hidden
@@ -395,6 +395,6 @@ function genera_tabla_json() {
             document.getElementById("imprimemeEsta").innerHTML = "";
             genera_tabla();
 
-        })
+        });
     }
 }

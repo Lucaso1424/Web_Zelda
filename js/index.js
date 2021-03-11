@@ -94,7 +94,7 @@ function genera_tabla() {
                     textoCelda.setAttribute("width", "230px");
                     textoCelda.setAttribute("height", "170px");
                     if (objetoForm[i].image == undefined || objetoForm[i].image == "") {
-                        textoCelda.src = "/img/default_links.jpg";
+                        textoCelda.src = "img/default_links.jpg";
                     }
                 }
 
@@ -141,7 +141,7 @@ function genera_tabla() {
     document.getElementById("formulario").innerHTML = "<input type='button' value='Formulario' id='mostrarForm'><div id='ocultar_video'></div>";
 
     document.getElementById("mostrarForm").style.visibility = "visible";
-    document.getElementById("ocultar_video").innerHTML = "<video id='video' width='700' height='350'><source src = '/video/cagaste.mp4'></video>";
+    document.getElementById("ocultar_video").innerHTML = "<video id='video' width='700' height='350'><source src = 'video/cagaste.mp4'></video>";
     document.getElementById("mostrarForm").addEventListener("click", mostrarForm);
     document.getElementById("ocultar_video").style.visibility = "hidden";
     //  ocultarForm();
@@ -307,14 +307,14 @@ function anadirEventListener() {
             delete objetoForm[i].image;
             console.log("Se ha borrado la imagen, dejamos una imagen default");
             document.getElementById(i + "-6").src = "/img/vegeta_meme.png";
-            objetoForm[i].image = "/img/vegeta_meme.png";
+            objetoForm[i].image = "img/vegeta_meme.png";
         });
     }
 }
 
 // CREAMOS UNA FUNCIÓN PARA CREAR UN NUEVO OBJETO DE AUDIO Y REPRODUCIRLO CON EL METODO .play()
 function sonidoCofre() {
-    let audio = new Audio("/sound/chest.mp3");
+    let audio = new Audio("sound/chest.mp3");
     audio.play();
 }
 
