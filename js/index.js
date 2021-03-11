@@ -30,7 +30,7 @@ window.onload = function () {
 // CREAMOS LA FUNCION DE GENERAR LA TABLA, PARA GENERAR LA PRIMERA ENTRADA DE LA TABLA
 function genera_tabla() {
     string64 = "";
-    if (!objetoForm[0]) addItems(1, "Skyward Sword", "Link", "500", "Arco", "Lobo", "/img/link.gif", "Saltar", "Bosque Faraone", "Espada Maestra", "Cantico de la Diosa");
+    if (!objetoForm[0]) addItems(1, "Skyward Sword", "Link", "500", "Arco", "Lobo", "img/link.gif", "Saltar", "Bosque Faraone", "Espada Maestra", "Cantico de la Diosa");
 
     // Obtener la referencia del elemento body
     var div = document.getElementById("imprimir");
@@ -306,7 +306,7 @@ function anadirEventListener() {
         document.getElementById(i + "-6").addEventListener("dblclick", function () {
             delete objetoForm[i].image;
             console.log("Se ha borrado la imagen, dejamos una imagen default");
-            document.getElementById(i + "-6").src = "/img/vegeta_meme.png";
+            document.getElementById(i + "-6").src = "img/vegeta_meme.png";
             objetoForm[i].image = "img/vegeta_meme.png";
         });
     }
